@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Lazada Logistics Auto-processor",
+  "version": "1.0",
+  "description": "Automatically processes failed delivery parcels based on specific conditions",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
